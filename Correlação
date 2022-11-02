@@ -1,0 +1,2 @@
+data("attitude")
+cor.test(attitude$rating,attitude$learning)
