@@ -1,0 +1,5 @@
+Dia <- c(10,15,20,25)
+Ticker <- c('XPPR11', 'HLGL11', 'XPML11', 'RECR11')
+Dy <- c(0.5,0.4,0.6,1.2)
+Dividendos <- data.frame(Ticker,Dia,Dy)
+DividendosV <- pivot_wider(Dividendos,names_from = Dia,values_from = Dy)
