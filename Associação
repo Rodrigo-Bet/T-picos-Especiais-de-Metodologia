@@ -1,0 +1,7 @@
+Ticker <- c('XPPR11', 'HLGL11', 'XPML11', 'RECR11')
+Price <- c (100,120,110,150)
+Dy <- c(5,6,9,12)
+PL <- c(10,12,17,20)
+Carteira <- data.frame (Ticker,Price,Dy,PL)
+Carteira2 <- Carteira %>% select(-Ticker)
+cor(Carteira2)
