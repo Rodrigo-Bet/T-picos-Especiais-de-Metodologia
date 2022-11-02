@@ -1,0 +1,7 @@
+#Variável normal
+rnorm((30))
+#Variável Binomial
+rbinorm(30,1,0.2)
+#Index
+distb <- rbinom(20,1,0.5)
+index <- seq(1, length(distb))
