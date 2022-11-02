@@ -1,0 +1,4 @@
+DataUSA <- USArrests
+RegrasUSA <- validator(murder >= 0, Assault >= 0, UrbanPop >= 0, Rape >= 0)
+ValidUSA <- confront (DataUSA, RegrasUSA)
+summary(ValidUSA)
