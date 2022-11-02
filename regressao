@@ -2,3 +2,22 @@ data("USArrests")
 regUSArrests <- lm(Assault ~ ., data = USArrests)
 summary(regUSArrests)
 lm.beta::lm.beta(regUSArrests)
+
+
+#
+
+regUsarrestsBack <- step(
+  lm(Assault ~ ., data = USArrests), direction = 'backward')
+summary(regUsarrestsBack)
+
+regUsarrestsForw <- step(
+  lm(Assault ~ ., data = USArrests), direction = 'forward')
+summary(regUsarrestsForw)
+
+regUsarrestsBoth <- step(
+  lm(Assault ~ ., data = USArrests), direction = 'both')
+summary(regSwissBoth)
+
+#
+
+> plot(regUSArrests, which=1, col=c("black"))
