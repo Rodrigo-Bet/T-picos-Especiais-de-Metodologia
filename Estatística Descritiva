@@ -1,0 +1,6 @@
+data("USArrests")
+mean(USArrests$Murder)
+median(USArrests$Murder)
+sd(USArrests$Murder)
+plot(USArrests$Murder)
+summary(USArrests)
