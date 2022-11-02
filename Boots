@@ -1,0 +1,2 @@
+distb <- rbinom(20,1,0.5)
+bootsdist <- replicate(20, sample(distb, 10, replace = TRUE))
