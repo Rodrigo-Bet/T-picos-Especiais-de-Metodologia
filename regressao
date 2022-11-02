@@ -1,0 +1,4 @@
+data("USArrests")
+regUSArrests <- lm(Assault ~ ., data = USArrests)
+summary(regUSArrests)
+lm.beta::lm.beta(regUSArrests)
