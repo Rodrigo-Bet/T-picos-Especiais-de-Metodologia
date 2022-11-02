@@ -1,0 +1,20 @@
+#Create Data.Frame
+Name <- c('enbr3', 'egie3', 'itub3', 'abev3', 'itsa4', 'eztc3')
+Sector <- c('eletr','eletr','finan','ind','finan','constr')
+Rating <- c('A','AA','A','C','A','B')
+Stocks <- data.frame(Name,Sector,Rating)
+Stocks
+
+#Análise categorias
+rating_table <- table(Stocks$Rating, Stocks$Sector)
+rating_table
+
+#plot graph
+ggplot(Stocks) + aes(x = Sector, fill = Rating) + geom_bar(position = "fill")
+
+#test
+rating_test <- chisq.test(rating_table)
+rating_test
+
+rating_test$observed
+rating_test$expected
