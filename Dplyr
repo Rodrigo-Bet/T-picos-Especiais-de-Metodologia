@@ -1,0 +1,8 @@
+#agrupamento
+count(storms,status)
+#manipulação (nova coluna)
+mutate(storms, power = wind + pressure)
+#agrupamento 
+dplyr::group_by(storms,category)
+#manipulação do nome de coluna
+rename(storms, Y = year)
