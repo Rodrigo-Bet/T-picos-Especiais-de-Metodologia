@@ -1,0 +1,7 @@
+Dia <- c(10,15,20,25)
+Ticker <- c('XPPR11', 'HLGL11', 'XPML11', 'RECR11')
+Dy <- c(0.5,NA,0.6,1.2)
+Dividendos <- data.frame(Ticker,Dia,Dy)
+Price <- c (100,120,110,150)
+FISS <- data.frame(Ticker,Price)
+Consolidado <- inner_join(Dividendos,FISS)
